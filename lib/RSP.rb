@@ -13,7 +13,7 @@ class RSP
  def wins(input1, input2)
     if (input1 === 'rock' && input2 === 'scissors') || (input1 === 'scissors' && input2 === 'paper') || (input1 === 'paper' && input2 === 'rock')
       # puts "You win!"
-      # playerScore += 1
+      #  ""
       return 'input1 wins'
     elsif (input1 === input2)
       return 'draw'
