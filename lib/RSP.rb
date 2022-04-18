@@ -10,7 +10,7 @@ class RSP
 
     puts "Select your weapon"
 
- def wins(input1, input2)
+  def wins(input1, input2)
     if (input1 === 'rock' && input2 === 'scissors') || (input1 === 'scissors' && input2 === 'paper') || (input1 === 'paper' && input2 === 'rock')
       # puts "You win!"
       #  ""
@@ -23,18 +23,17 @@ class RSP
       # computerScore += 1
     end
   end
-
-  # def ask(question)
-  #   puts question
-  #   answer = gets.chomp
-  #   puts "You choose #{answer}"
-  # end
+  
+  def player_input()
+    input1= gets.chomp.downcase
+    puts "#{input1} #{wins(input1, "paper")}"
+  end
   
 end
 
 player1 = RSP.new()
-input1= gets.chomp.downcase
-puts "#{input1} #{player1.wins(input1, "paper")}"
+player1.player_input()
+put
 
 
 
